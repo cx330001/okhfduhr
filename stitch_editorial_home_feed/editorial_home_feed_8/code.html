@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NOIR - Create New Post</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#000000",
+                        "charcoal": "#1a1a1a",
+                        "background-light": "#ffffff",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.4rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-btn svg {
+            width: 22px;
+            height: 22px;
+            stroke-width: 1px;
+        }
+        textarea::placeholder {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            color: #a3a3a3;
+        }
+        .media-placeholder {
+            background-image: linear-gradient(45deg, #fafafa 25%, transparent 25%), linear-gradient(-45deg, #fafafa 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #fafafa 75%), linear-gradient(-45deg, transparent 75%, #fafafa 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light font-display text-black antialiased">
+<header class="sticky top-0 z-50 bg-white border-b border-gray-50">
+<div class="max-w-md mx-auto flex items-center justify-between px-6 py-5">
+<div class="flex-1">
+<button class="text-[15px] font-medium tracking-tight text-neutral-400 hover:text-black transition-colors">
+                    Cancel
+                </button>
+</div>
+<div class="flex justify-center">
+<div class="text-xl font-serif font-black tracking-[0.25em] uppercase italic">Noir</div>
+</div>
+<div class="flex-1 flex justify-end">
+<button class="bg-black text-white px-5 py-1.5 rounded-lg text-[13px] font-semibold tracking-wide hover:bg-zinc-800 transition-colors">
+                    Post
+                </button>
+</div>
+</div>
+</header>
+<main class="max-w-md mx-auto px-6 pt-8 pb-32">
+<div class="flex gap-4">
+<div class="size-10 shrink-0 rounded-full bg-black overflow-hidden border border-gray-100 flex items-center justify-center">
+<div class="size-5 border border-white/40 rounded-full"></div>
+</div>
+<div class="flex-1 flex flex-col gap-6">
+<div class="pt-2">
+<textarea autofocus="" class="w-full border-0 p-0 focus:ring-0 text-[17px] leading-relaxed resize-none bg-transparent min-h-[120px]" placeholder="Start a thread..."></textarea>
+</div>
+<div class="relative w-full aspect-[4/5] rounded-sm border border-dashed border-neutral-200 bg-neutral-50/50 flex flex-col items-center justify-center group cursor-pointer hover:bg-neutral-50 transition-colors">
+<div class="size-12 rounded-full border border-neutral-200 flex items-center justify-center mb-3">
+<svg class="w-6 h-6 text-neutral-300" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24">
+<line x1="12" x2="12" y1="5" y2="19"></line>
+<line x1="5" x2="19" y1="12" y2="12"></line>
+</svg>
+</div>
+<span class="text-[11px] uppercase tracking-[0.15em] text-neutral-400 font-medium">Add Editorial Media</span>
+</div>
+</div>
+</div>
+</main>
+<div class="fixed bottom-0 left-0 right-0 bg-white/80 backdrop-blur-md border-t border-gray-50 pb-safe">
+<div class="max-w-md mx-auto flex items-center justify-between px-8 h-16">
+<div class="flex items-center gap-8">
+<button class="icon-btn text-neutral-400 hover:text-black transition-colors">
+<svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+<circle cx="12" cy="13" r="4"></circle>
+</svg>
+</button>
+<button class="icon-btn text-neutral-400 hover:text-black transition-colors">
+<svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<rect height="18" rx="2" ry="2" width="18" x="3" y="3"></rect>
+<circle cx="8.5" cy="8.5" r="1.5"></circle>
+<polyline points="21 15 16 10 5 21"></polyline>
+</svg>
+</button>
+<button class="icon-btn text-neutral-400 hover:text-black transition-colors">
+<svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<line x1="18" x2="18" y1="20" y2="10"></line>
+<line x1="12" x2="12" y1="20" y2="4"></line>
+<line x1="6" x2="6" y1="20" y2="14"></line>
+</svg>
+</button>
+<button class="icon-btn text-neutral-400 hover:text-black transition-colors">
+<svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+<circle cx="12" cy="10" r="3"></circle>
+</svg>
+</button>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-[12px] text-neutral-300 font-medium tracking-tight">Anyone can reply</span>
+</div>
+</div>
+<div class="h-6"></div>
+</div>
+
+</body></html>
